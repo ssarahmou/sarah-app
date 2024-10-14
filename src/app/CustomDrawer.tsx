@@ -9,7 +9,7 @@ export default function CustomDrawer() {
     const [snap, setSnap] = useState<number | string | null>(snapPoints[0]);
     return (
       <Drawer.Root snapPoints={snapPoints} activeSnapPoint={snap} setActiveSnapPoint={setSnap}>
-        <Drawer.Trigger className="flex flex-col mt-8 bg-slate-400 p-4 rounded-md">Open Drawer</Drawer.Trigger>
+        <Drawer.Trigger className="flex flex-col mt-8 bg-sle p-3 rounded-lg bg-slate-400" type = "submit" >See Reviews</Drawer.Trigger>
         <Drawer.Portal>
           <Drawer.Overlay className="fixed inset-0 bg-black/40" />
           <Drawer.Content data-testid="content"
@@ -83,60 +83,34 @@ export default function CustomDrawer() {
                 ></path>
               </svg>
             </div>
-            <Drawer.Title className="text-2xl mt-2 font-medium text-gray-900">The Hidden Details</Drawer.Title>
-            <p className="text-sm mt-1 text-gray-600 mb-6">40 videos, 20+ exercises</p>
+            <Drawer.Title className="text-2xl mt-2 font-medium text-gray-900">Website rating</Drawer.Title>
+            <p className="text-sm mt-1 text-gray-600 mb-6">40 ratings, 20+ images</p>
             <p className="text-gray-600">
-              The world of user interface design is an intricate landscape filled with hidden details and nuance. In
-              this course, you will learn something cool. To the untrained eye, a beautifully designed UI.
+              Lots of people love this website! See what they say about it!
             </p>
-            <button className="bg-black text-gray-50 mt-8 rounded-md h-[48px] flex-shrink-0 font-medium">
-              Buy for $199
-            </button>
             <div className="mt-12">
-              <h2 className="text-xl font-medium text-gray-900">Module 01. The Details</h2>
+              <h2 className="text-xl font-medium text-gray-900">The Details</h2>
               <div className="space-y-4 mt-4">
                 <div>
-                  <span className="block text-gray-900">Layers of UI</span>
-                  <span className="text-gray-600">A basic introduction to Layers of Design.</span>
+                  <span className="block text-gray-900">Review 1</span>
+                  <span className="text-gray-600">So cool I really liked the interactivity of inputting my information.</span>
                 </div>
-                <div>
-                  <span className="block text-gray-900">Typography</span>
-                  <span className="text-gray-600">The fundamentals of type.</span>
-                </div>
-                <div>
-                  <span className="block text-gray-900">UI Animations</span>
-                  <span className="text-gray-600">Going through the right easings and durations.</span>
-                </div>
+                
+                
               </div>
             </div>
             <div className="mt-12">
               <figure>
                 <blockquote className="font-serif text-gray-900">
-                  “I especially loved the hidden details video. That was so useful, learned a lot by just reading it.
-                  Can&rsquo;t wait for more course content!”
+                  “I especially loved the specificity the prompt gave me. That was so useful, learned a lot by just reading it.
+                  Can&rsquo;t wait for more content!”
                 </blockquote>
                 <figcaption>
                   <span className="text-sm text-gray-600 mt-2 block">Yvonne Ray, Frontend Developer</span>
                 </figcaption>
               </figure>
             </div>
-            <div className="mt-12">
-              <h2 className="text-xl font-medium text-gray-900">Module 02. The Process</h2>
-              <div className="space-y-4 mt-4">
-                <div>
-                  <span className="block text-gray-900">Build</span>
-                  <span className="text-gray-600">Create cool components to practice.</span>
-                </div>
-                <div>
-                  <span className="block text-gray-900">User Insight</span>
-                  <span className="text-gray-600">Find out what users think and fine-tune.</span>
-                </div>
-                <div>
-                  <span className="block text-gray-900">Putting it all together</span>
-                  <span className="text-gray-600">Let&apos;s build an app together and apply everything.</span>
-                </div>
-              </div>
-            </div>
+
           </div>
         </Drawer.Content>
         </Drawer.Portal>

@@ -36,7 +36,7 @@ export default function Home() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    toast('Form for ' + values.username + ' submitted successfully!');
+    toast('$100,000 purchase made on ' + values.username + ' submitted successfully!');
     console.log(values);
   }
 
@@ -51,12 +51,12 @@ export default function Home() {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel>Credit card number + expiry date + CVV</FormLabel>
                 <FormControl>
-                  <Input placeholder="shadcn" {...field} />
+                  <Input placeholder="Input info here" {...field} />
                 </FormControl>
                 <FormDescription>
-                  This is your public display name.
+                  Dw about it so chill
                 </FormDescription>
                 <FormMessage />
               </FormItem>

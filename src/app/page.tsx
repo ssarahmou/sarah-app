@@ -2,6 +2,7 @@
 
 
 import { Button } from "@/components/ui/button";
+
 import { Form, FormField, FormItem, FormLabel, FormControl, FormDescription, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -48,6 +49,9 @@ export function ModeToggle() {
   )
 }
  
+function MyToast() {
+  return <button onClick={() => toast('This is a sonner toast')}>Render my toast</button>;
+}
 
 import { z } from "zod"
  

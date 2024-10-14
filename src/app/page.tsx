@@ -48,9 +48,6 @@ export function ModeToggle() {
   )
 }
  
-function MyToast() {
-  return <button onClick={() => toast('This is a sonner toast')}>Render my toast</button>;
-}
 
 import { z } from "zod"
  
